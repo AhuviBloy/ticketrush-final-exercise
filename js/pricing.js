@@ -4,7 +4,7 @@ const SERVICE_FEE = 12;        // ₪ עמלת שירות לכל כרטיס
 const MEMBER_DISCOUNT = 0.2;   // 20% הנחה לחברות מועדון
 const STUDENT_DISCOUNT = 0.15; // 15% הנחה לסטודנטיות
 const MAX_TICKETS = 8;         // מקסימום כרטיסים ללקוחה רגילה
-const MAX_TICKETS_MEMBER = 4;  // מקסימום כרטיסים לחברת מועדון
+const MAX_TICKETS_MEMBER = 6;  // מקסימום כרטיסים לחברת מועדון
 
 function maxTickets(isMember) {
   return isMember ? MAX_TICKETS_MEMBER : MAX_TICKETS;
