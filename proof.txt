@@ -1,0 +1,65 @@
+### git worktree list
+D:/פרטי/Git Project/ticketrush        bb8b166 [main]
+D:/פרטי/Git Project/early-access      2d46fb1 [feature/early-access]
+D:/פרטי/Git Project/hotfix-price      3e54159 [hotfix/price]
+D:/פרטי/Git Project/noa-review        e221840 [review/noa-refund]
+D:/פרטי/Git Project/waitlist          197c7b0 [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access      2d46fb1 (D:/פרטי/Git Project/early-access) feat(pricing): raise club-member ticket quota from 4 to 6
++ feature/waitlist          197c7b0 (D:/פרטי/Git Project/waitlist) feat(waitlist): add joinWaitlist for sold-out tickets
++ hotfix/price              3e54159 (D:/פרטי/Git Project/hotfix-price) Revert "perf: faster price formatting"
+* main                      bb8b166 [origin/main: ahead 13] Merge branch 'feature/waitlist'
++ review/noa-refund         e221840 (D:/פרטי/Git Project/noa-review) [origin/noa/refund: ahead 1] docs(review): review noa/refund — block merge, service fee wrongly refunded
+  remotes/origin/HEAD       -> origin/main
+  remotes/origin/dana/promo d4b1e35 test: add student discount tests
+  remotes/origin/main       6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund f7e8785 test: refund tests
+  remotes/origin/ruth/fixes fee9f58 wip: try new fonts
+
+### git log --graph --oneline --all -n 80
+*   bb8b166 (HEAD -> main, tag: v1.1) Merge branch 'feature/waitlist'
+|\  
+| * 197c7b0 (feature/waitlist) feat(waitlist): add joinWaitlist for sold-out tickets
+* |   bbf79db Merge branch 'feature/early-access'
+|\ \  
+| * | 2d46fb1 (feature/early-access) feat(pricing): raise club-member ticket quota from 4 to 6
+| * | 1da5b96 Merge branch 'main' into feature/early-access
+| |\| 
+| * |   afadb82 Merge remote-tracking branch 'origin/dana/promo' into feature/early-access
+| |\ \  
+| | * | d4b1e35 (origin/dana/promo) test: add student discount tests
+| | * | 0841085 feat: student discount (15%)
+| * | | d0b094d feat(pricing): add club-member early access pricing
+| |/ /  
+* | | 506f0da security: stop tracking payment API key, add config template
+* | | f79e76c fix: correct concert date in events.js
+| |/  
+|/|   
+* |   a4a8ab2 Merge hotfix/price: restore correct price formatting (revert perf regression)
+|\ \  
+| |/  
+|/|   
+| * 3e54159 (hotfix/price) Revert "perf: faster price formatting"
+|/  
+| * e221840 (review/noa-refund) docs(review): review noa/refund — block merge, service fee wrongly refunded
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
